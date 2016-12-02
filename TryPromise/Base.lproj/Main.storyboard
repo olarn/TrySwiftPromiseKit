@@ -28,13 +28,39 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bic-5O-Z4b">
+                                <rect key="frame" x="113" y="94" width="148" height="48"/>
+                                <color key="backgroundColor" red="0.90353347081218272" green="0.90353347081218272" blue="0.90353347081218272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="gwq-YE-QLJ"/>
+                                    <constraint firstAttribute="height" constant="48" id="nxg-mv-duU"/>
+                                </constraints>
+                                <state key="normal" title="Try Promise Kit"/>
+                                <connections>
+                                    <action selector="touchUpInsideOnTryPromiseKitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Os-QX-2ub"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4n-LH-XI7">
+                                <rect key="frame" x="113" y="150" width="148" height="42"/>
+                                <color key="backgroundColor" red="0.90353347080000002" green="0.90353347080000002" blue="0.90353347080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Try Dispatch Group"/>
+                                <connections>
+                                    <action selector="touchUpInsideOnTryDispatchGroupButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lfe-Of-3ka"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Bic-5O-Z4b" firstAttribute="centerX" secondItem="u4n-LH-XI7" secondAttribute="centerX" id="0zm-ts-FjF"/>
                             <constraint firstItem="YOT-vU-oFq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6RU-KS-Kkl"/>
+                            <constraint firstItem="u4n-LH-XI7" firstAttribute="top" secondItem="Bic-5O-Z4b" secondAttribute="bottom" constant="8" id="CCX-fo-JwJ"/>
+                            <constraint firstItem="Bic-5O-Z4b" firstAttribute="width" secondItem="u4n-LH-XI7" secondAttribute="width" id="DKo-Lf-zcH"/>
+                            <constraint firstItem="Bic-5O-Z4b" firstAttribute="centerX" secondItem="YOT-vU-oFq" secondAttribute="centerX" id="Jmv-uo-xJE"/>
                             <constraint firstItem="YOT-vU-oFq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="MDz-2U-cTO"/>
                             <constraint firstItem="YOT-vU-oFq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Rwu-WN-ihA"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YOT-vU-oFq" secondAttribute="bottom" constant="20" id="fNf-uS-V54"/>
+                            <constraint firstItem="Bic-5O-Z4b" firstAttribute="height" secondItem="u4n-LH-XI7" secondAttribute="height" constant="6" id="lss-hY-WI1"/>
+                            <constraint firstItem="YOT-vU-oFq" firstAttribute="top" secondItem="Bic-5O-Z4b" secondAttribute="bottom" constant="-70" id="nCe-Fs-DET"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dxR-aJ-NZ6">
