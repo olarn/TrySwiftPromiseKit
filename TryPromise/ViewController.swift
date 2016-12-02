@@ -10,6 +10,7 @@
 //   pod PromiseKit       :- https://libraries.io/cocoapods/PromiseKit
 //   PromiseKit/AlamiFire :- https://github.com/PromiseKit/Alamofire
 //   Related Doc          :- http://promisekit.org/docs/making-promises/
+//   DispatchGRoup        :- http://stackoverflow.com/questions/35906568/wait-until-swift-for-loop-with-asynchronous-network-requests-finishes-executing
 
 import UIKit
 import PromiseKit
@@ -83,6 +84,8 @@ class ViewController: UIViewController {
         self.dispatchGroup.notify(queue: DispatchQueue.main) {
             print("done!")
         }
+
+        print("Asynchronoud check!!!")
     }
 }
 
